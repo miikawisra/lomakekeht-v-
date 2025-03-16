@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Form</title>
+</head>
+<body>
+
+<fieldset>
+    <legend>Contact information:</legend>
+    <table>
+        <tr>
+            <td><label for="fname">First name:</label></td>
+            <td><input type="text" id="fname" name="fname"></td>
+            <td><label>Preferred contact method:</label></td>
+        </tr>
+        <tr>
+            <td><label for="lname">Last name:</label></td>
+            <td><input type="text" id="lname" name="lname"></td>
+            <td><input type="checkbox" id="email_check" name="contact_method" value="email">
+                <label for="email_check">Email</label>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type="text" id="email" name="email"></td>
+            <td><input type="checkbox" id="phone_check" name="contact_method" value="phone">
+                <label for="phone_check">Telephone</label>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="telephone">Telephone:</label></td>
+            <td><input type="text" id="telephone" name="telephone"></td>
+        </tr>
+    </table>
+</fieldset>
+
+<fieldset>
+    <legend>Feedback:</legend>
+    <table>
+        <tr>
+            <td><label for="subject">Message subject:</label></td>
+            <td><input type="text" id="subject" name="subject"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <textarea name="message" rows="10" cols="50"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="file">Attach a file:</label></td>
+            <td><input type="file" id="file" name="file"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" value="Send"></td>
+        </tr>
+    </table>
+</fieldset>
+
+</body>
+</html>
